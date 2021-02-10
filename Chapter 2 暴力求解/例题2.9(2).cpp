@@ -1,6 +1,6 @@
-//Chapter 2 ±©Á¦Çó½â
-//ÀıÌâ2.9 Ê£ÏÂµÄÊ÷ 
-//¸Ã´úÂëÔÚDev C++¿ÉÒÔ±àÒë£¬·ÅÅ£¿ÍÉÏ±àÒëÊ§°Ü 
+//Chapter 2 æš´åŠ›æ±‚è§£
+//ä¾‹é¢˜2.9 å‰©ä¸‹çš„æ ‘ 
+//è¯¥ä»£ç åœ¨Dev C++å¯ä»¥ç¼–è¯‘ï¼Œæ”¾ç‰›å®¢ä¸Šç¼–è¯‘å¤±è´¥ 
 
 #include <iostream>
 #include <algorithm>
@@ -13,7 +13,7 @@ const int MAXN = 100 + 10;
 struct Interval{
 	int start;
 	int end;
-	//Interval(int s, int e) : start(s), end(e){}//½á¹¹ÌåÒª´´½¨Êı×éÊ±ÊÇ²»ÄÜ¼ÓÕâ¾ä 
+	//Interval(int s, int e) : start(s), end(e){}//ç»“æ„ä½“è¦åˆ›å»ºæ•°ç»„æ—¶æ˜¯ä¸èƒ½åŠ è¿™å¥ 
 	bool operator < (Interval interval) const {
 		return start < interval.start;
 	}
@@ -43,7 +43,7 @@ int main(){
 		memset(intervals, 0, sizeof(intervals));
 		for(int i = 0; i < M; i++){
 			scanf("%d%d", &intervals[i].start, &intervals[i].end);
-			//cin >> intervals[i].start << intervals[i].end;//»¹²»ÖªÎªºÎcin²»ĞĞ 
+			//cin >> intervals[i].start << intervals[i].end;//è¿˜ä¸çŸ¥ä¸ºä½•cinä¸è¡Œ 
 		}
 		sort(intervals, intervals + M);
 		int number = Number(0, M, 0);
