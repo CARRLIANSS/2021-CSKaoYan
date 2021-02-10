@@ -1,5 +1,5 @@
-//Chapter 2 暴力求解
-//例题2.9 剩下的树 
+//Chapter 2 鏆村姏姹傝В
+//渚嬮2.9 鍓╀笅鐨勬爲 
 
 
 #include <iostream>
